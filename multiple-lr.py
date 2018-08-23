@@ -50,9 +50,10 @@ print('w: ', w)
 yhat = np.dot(X, w)
 
 # 1D-plot using just a single x-dimension input
-# plt.scatter(X[:,0], Y)
-# plt.plot(yhat)
-# plt.show
+plt.scatter(X[:,0], Y)
+plt.plot(X[:,0], yhat)
+# plt.savefig('my-figures/fig4')
+plt.show()
 
 # # Calculated Squared Error (Squared - residual)
 d1 = Y - yhat
@@ -73,6 +74,6 @@ print('R-Squared: ', r_squared)
 # fig = plt.figure()
 # ax = fig.add_subplot(111, projection='3d')
 # plt.scatter(sorted(X[:,0]), sorted(X[:,1]), sorted(X[:,2]), sorted(Y))
-# ax.plot(yhat, Y)
+# ax.plot(X, yhat)
 # # plt.savefig('my-figures/fig2.png')
 # plt.show()
