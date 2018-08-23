@@ -26,6 +26,7 @@ Y = np.array(Y)
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 plt.scatter(X[:,0], X[:,1], X[:,2], Y)
+plt.savefig('my-figures/fig2.png')
 plt.show()
 
 # our solution: w = (xTX)^-1 * xTY

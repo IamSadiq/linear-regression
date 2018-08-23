@@ -73,4 +73,5 @@ print('time to double: ', np.log(2)/a, ' years')
 
 plt.scatter(X, Y)
 plt.plot(yhat)
+plt.savefig('my-figures/fig1.png')
 plt.show()
