@@ -22,7 +22,7 @@ for line in data:
 X = np.array(X)
 Y = np.array(Y)
 
-# show the distribution in a graph
+# 3D-Plot of the actual moores distribution, using non linear Y
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 plt.scatter(X[:,0], X[:,1], X[:,2], Y)
@@ -32,7 +32,7 @@ plt.show()
 # take the Log of transistor counts (Y) to make it linear
 Y = np.log(Y)
 
-# show again
+# 3D-Plot with a now linear Y
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 plt.scatter(X[:,0], X[:,1], X[:,2], Y)
@@ -49,6 +49,11 @@ print('w: ', w)
 # # our Model: Prediction
 yhat = np.dot(X, w)
 
+# 1D-plot using just a single x-dimension input
+# plt.scatter(X[:,0], Y)
+# plt.plot(yhat)
+# plt.show
+
 # # Calculated Squared Error (Squared - residual)
 d1 = Y - yhat
 SSres = d1.dot(d1)
@@ -64,10 +69,10 @@ print('\nSquared Error (SSres): ', SSres)
 print('Predicted Mean (SStot): ', SStot)
 print('R-Squared: ', r_squared)
 
-# Plot the Model to fit the distribution
-fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
-plt.scatter(X[:,0], X[:,1], X[:,2], Y)
-ax.plot(yhat, Y)
-# plt.savefig('my-figures/fig2.png')
-plt.show()
+# 3D-Plot the Model to fit the distribution
+# fig = plt.figure()
+# ax = fig.add_subplot(111, projection='3d')
+# plt.scatter(sorted(X[:,0]), sorted(X[:,1]), sorted(X[:,2]), sorted(Y))
+# ax.plot(yhat, Y)
+# # plt.savefig('my-figures/fig2.png')
+# plt.show()
