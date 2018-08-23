@@ -26,7 +26,17 @@ Y = np.array(Y)
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 plt.scatter(X[:,0], X[:,1], X[:,2], Y)
-plt.savefig('my-figures/fig2.png')
+plt.savefig('my-figures/3d-moores.png')
+plt.show()
+
+# take the Log of transistor counts (Y) to make it linear
+Y = np.log(Y)
+
+# show again
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+plt.scatter(X[:,0], X[:,1], X[:,2], Y)
+plt.savefig('my-figures/3d-moores-made-linear.png')
 plt.show()
 
 # our solution: w = (xTX)^-1 * xTY

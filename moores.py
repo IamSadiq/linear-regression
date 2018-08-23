@@ -21,6 +21,7 @@ Y = np.array(Y)
 
 # plot it --- exponential graph
 plt.scatter(X,Y)
+# plt.savefig('my-figures/1d-moores.png')
 plt.show()
 
 # take the Log of transistor counts (Y) to make it linear
@@ -28,6 +29,7 @@ Y = np.log(Y)
 
 # plot it -- linear graph
 plt.scatter(X, Y)
+# plt.savefig('my-figures/1d-moores-made-linear.png')
 plt.show()
 
 xDotx = X.dot(X)
