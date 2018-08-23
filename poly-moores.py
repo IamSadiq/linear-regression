@@ -14,7 +14,7 @@ for line in data:
     x = float(x)
     X.append([1, x, x*x])
     # X.append(x)
-    Y.append(y)
+    Y.append(float(y))
 
 # convert to numpy arrays
 X = np.array(X)
@@ -41,7 +41,7 @@ Yhat = np.dot(X, w)
 # plot again adding line of best fit
 plt.scatter(X[:,1], Y)
 plt.plot(X[:,1], Yhat)
-# plt.savefig('my-figures/fig3')
+# plt.savefig('my-figures/fig5')
 plt.show()
 
 # Calculated R-squared
