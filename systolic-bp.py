@@ -33,5 +33,3 @@ def get_r2(X, Y):
 print('r2 for X2only: ', get_r2(X2only, Y))
 print('r2 for X3only: ', get_r2(X3only, Y))
 print('r2 for both: ', get_r2(X, Y))
-
-# both solution
