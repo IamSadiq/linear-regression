@@ -50,3 +50,4 @@ d2 = Y - Y.mean()
 
 r_squared = 1 - d1.dot(d1)/d2.dot(d2)
 print('R-Squared: ', r_squared) # r-squared of approximately One(1) means a very good Model
+
