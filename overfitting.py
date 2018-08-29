@@ -80,8 +80,8 @@ def plot_train_vs_test_curves(X, Y, sample=20, max_deg=20):
 
         Xtest_poly = make_poly(Xtest, deg)
         Yhat_test = Xtest_poly.dot(w)
-
         mse_test = get_mse(Ytest, Yhat_test)
+        
         mse_trains.append(mse_train)
         mse_tests.append(mse_test)
 
