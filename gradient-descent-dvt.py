@@ -35,4 +35,11 @@ for t in range(1000):
     costs.append(mse)
 
 plt.plot(costs)
+# plt.savefig('./my-figures/gradient-descent.png')
+plt.show()
+
+plt.plot(Yhat, label="predictions")
+plt.plot(Y, label="targets")
+plt.legend()
+# plt.savefig('./my-figures/gd-predictions-vs-targets.png')
 plt.show()
