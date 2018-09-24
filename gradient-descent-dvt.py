@@ -34,7 +34,8 @@ for t in range(1000):
     mse = delta.dot(delta)
     costs.append(mse)
 
-plt.plot(costs)
+plt.plot(costs, label="mean squared errors (mse)")
+plt.legend()
 # plt.savefig('./my-figures/gradient-descent.png')
 plt.show()
 
